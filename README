@@ -1,0 +1,28 @@
+sha1files
+=========
+
+A simple utility to walk a directory tree and compute SHA1s.
+
+
+Usage
+-----
+
+sha1files DIR [DIR]...
+
+The utility walks the provided directories and inserts the SHA1, extension,
+filename (minus extension), and absolute path for all found files into a SQLite
+database (files.db). Currently, all hidden directories and files are skipped.
+
+
+Dependencies
+------------
+
+For SQLite:
+
+github.com/mattn/go-sqlite3
+
+
+License
+-------
+
+Code is available under the MIT license, see LICENSE for details.
